@@ -1,0 +1,148 @@
+<!DOCTYPE html>     
+<html lang="ES">
+	<head> <!-- etiqueta de cabecera-->
+		<meta charset="utf8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="Css/heroStuff.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat" rel="stylesheet">
+		<title>Hero ! stuff </title>
+	</head> 
+
+	<body class="body_style"> <!-- Cuerpo del codigo-->
+		
+
+
+		<section id="portada" class="portada "> <!-- Divisor de contenido-->
+			<div id=espaciador class="space">
+				<header class="contenedor"> <!-- Cabecera-->
+					<figure class="logotipo "> <!-- engloba imagenes-->	
+						<!-- Esta linea permite cargar la misma imagen en distintas resoluciones ya sea en mayor o menos  densidad de pixeles -->
+						<!-- <img class="logo" srcset="images/index_01.png 1x, ruta 2x, ruta 3x"  alt="No cargo u.u" width="200"> -->
+
+						<img class="logo" src="images/index_01.png" alt="No cargo u.u" width="200"> <!-- etiqueta con la direccion de las imagenes-->
+						<!-- Comics Movies and more :) loogotipo  -->
+					</figure>
+					<span class="icon-menu burger-button" id="burger-button"></span>
+						
+					<nav class="menu" id="menu"> <!--etiqueta especializada para el menu-->
+						 <!-- menu -->
+						 <ul> <!--Lista desordenada -->
+						 	<li> <!-- objeto de lista-->
+						 		<a href="DC.html" target="blank"><strong>DC</strong></a> <!-- etiqueta para colocar enlaces-->
+						 	</li>
+						 	<li> <!-- objeto de lista-->				 		
+						 		<a><strong>MARVEL</strong></a>
+						 	</li>
+						 	<li> <!-- objeto de lista-->
+						 		<a><strong>INDIE COMICS</strong></a>
+						 	</li>
+						 </ul>
+					</nav>
+				</header>
+			</div>	
+		</section>	
+
+		<div class="h-table">
+			<div class="contenedor">
+				<table>
+					<thead>
+						<tr>
+							<th>Hero</th>
+							<th>Arcs</th>
+							<th>Pricing</th>
+							<th>Hero</th>
+							<th>Arcs</th>
+							<th>Pricing</th>
+						</tr>
+					</thead>
+
+					<tbody>
+						<tr>
+							<td>Green Lantern</td>
+							<td>Godhead, Wrath of the first lantern, Blackest Night, Brightest Night</td>
+							<td>200$</td>
+							<td>Green Lantern</td>
+							<td>Godhead, Wrath of the first lantern, Blackest Night, Brightest Night</td>
+							<td>200$</td>
+						</tr>
+						<tr>
+							<td>Flash</td>
+							<td>Flaspoint, rebirth</td>
+							<td>200$</td>
+							<td>Flash</td>
+							<td>Flaspoint, rebirth</td>
+							<td>200$</td>
+						</tr>
+						<tr>
+							<td>Green Arrow</td>
+							<td>Quiver, Greatest Hits</td>
+							<td>3000$</td>
+							<td>Green Arrow</td>
+							<td>Quiver, Greatest Hits</td>
+							<td>3000$</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+
+		<footer class="footer">
+			
+			<div class="contenedor">	
+
+				<div class="contacto">
+					<img src="images/index_01.png" alt="No cargo u.u" width="200" height="200">
+					<a href="tel:+541168371587"> <strong>Telefono:</strong> <span>+541168371587"</span></a>
+					<a href="mailto:argbassist17@gmail.com"> <strong>Email:</strong> <span>argbassist17@gmail.com</span></a>
+					
+				</div>
+
+				<form class="formulario">
+
+					<div class="single-multiple">	
+							<label for = nombre>Nombre</label>
+							<input type="text" id="nombre" placeholder=" Ingrese su nombre" name="nombre" />
+							<label for = email>Email</label>
+							<input type="text" id="email" placeholder=" Ingrese su nombre" name="email" />
+							
+							
+							<div class="single-selection-sex">
+								<label for = mujer>
+									<input type="radio" id="mujer" name="sexo" value="mujer" />Mujer
+								</label>
+
+								<label for = hombre>
+									<input type="radio" id="hombre" name="sexo" value="hombre" />Hombre
+								</label>
+
+							</div>
+
+							<div class="multiple-selection-fav">
+								<label for = DC>
+									<input type="checkbox" id="DC" name="favoritos" value="DC" />DC
+								</label>
+
+								<label for = Marvel>
+									<input type="checkbox" id="Marvel" name="favoritos" value="Marvel Comics" />Marvel Comics
+								</label>
+
+								<label for = Vertigo>
+									<input type="checkbox" id="Vertigo" name="favoritos" value="Vertigo Comics"/>Vertigo
+
+								<label for = Indie>
+									<input type="checkbox" id="Indie" name="favoritos" value="Indie Stuff" />Indie
+								</label>		
+
+							</div>
+					</div>
+					<div class="comments-submit">
+						<label for = comments>Comentarios</label>
+						<textarea id="comments" cols="20" rows="10" name="comments" placeholder="Ingresa tus comentariors aqui"></textarea>
+						<input type="submit" value="enviar"/>
+					</div>
+				</form>
+			</div>		
+
+	</body>

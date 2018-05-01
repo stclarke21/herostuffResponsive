@@ -1,0 +1,266 @@
+<!DOCTYPE html>     
+<html lang="ES">
+	<head> <!-- etiqueta de cabecera-->
+		<meta charset="utf8">
+		<!-- 
+		esta linea de meta permite al navegador adaptar el contenido a dispositivos moviles
+		viewport da instrucciones al navegador de como manejar la escala y las dimensiones del sitio
+		device-width hace que la pagina siga el tamaño de la pantalla del dispositivo que se esta utilizando
+		Initial-scale aplica un zoom por defecto al sitio web -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="Css/heroStuff.css">
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat" rel="stylesheet">
+		<title>Hero ! stuff </title>
+	</head> 
+
+	<body class="body_style"> <!-- Cuerpo del codigo-->
+		
+
+		<section id="portada" class="portada "> <!-- Divisor de contenido-->
+			<div id=espaciador class="space">
+				<header class="contenedor"> <!-- Cabecera-->
+					<figure class="logotipo "> <!-- engloba imagenes-->	
+						<!-- Esta linea permite cargar la misma imagen en distintas resoluciones ya sea en mayor o menos  densidad de pixeles -->
+						<!-- <img class="logo" srcset="images/index_01.png 1x, ruta 2x, ruta 3x"  alt="No cargo u.u" width="200"> -->
+
+						<img class="logo" src="images/index_01.png" alt="No cargo u.u" width="200"> <!-- etiqueta con la direccion de las imagenes-->
+						<!-- Comics Movies and more :) loogotipo  -->
+					</figure>
+					<span class="icon-menu burger-button" id="burger-button"></span>
+						
+					<nav class="menu" id="menu"> <!--etiqueta especializada para el menu-->
+						 <!-- menu -->
+						 <ul> <!--Lista desordenada -->
+						 	<li> <!-- objeto de lista-->
+						 		<a href="DC.html" target="blank"><strong>DC</strong></a> <!-- etiqueta para colocar enlaces-->
+						 	</li>
+						 	<li> <!-- objeto de lista-->				 		
+						 		<a><strong>MARVEL</strong></a>
+						 	</li>
+						 	<li> <!-- objeto de lista-->
+						 		<a><strong>INDIE COMICS</strong></a>
+						 	</li>
+						 </ul>
+					</nav>
+				</header>
+
+
+				<div class="contenedor">
+					<h1 class="titulo">The <span>Multiverse</span> Bar</h1> <!-- portada -->
+					<h3 class="titulo_b"> Welcome to the edge of the multiverse where all the worlds collide</h3>
+					<div class="boton">
+						<a href="#">Enter in the multiverse</a>
+					</div>
+				</div>
+			</div>	
+		</section>
+	
+
+		<section class="heroes contenedor">
+			
+			<h3>Heroes From The Multiverse</h3>
+			<div class="video-demo-container">
+				<div class="video-demo">
+					<div class="iframe-container">
+						
+						<iframe class="iframe-style" width="560" height="315" src="https://www.youtube.com/embed/6FYqevAJhd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+							
+						</iframe>
+
+					</div>
+				</div>
+			</div>
+			
+			<article id="GreenLantern" class="heore">
+				
+
+				<!-- Segun la documentacion del lazi loading para cargar las imagenes del retina display, solo necesitamos tener un pipe en la descripcion de data src -->
+				<!-- <img class="heroesRight" data-src="images/Index_02.png | ruta de la imagen retina" width="300" height="391" alt= "Green Lantern"> -->
+
+				<img class="heroesRight" data-src="images/Index_02.png" width="300" height="391" alt= "Green Lantern">
+				<div class="contenedorHeroe-L" >	
+					<h3>Green Lantern</h3>
+					<ol>
+						<li>Blackest night</li>
+						<li>Brightest day</li>
+						<li>Godhead</li>
+					</ol>
+				</div>		
+			</article>
+
+			<article id = "flash" class="heore">
+				<img class="heroesLeft" data-src="images/Index_03.png" width="300" height="300" alt="flash">
+				<div class="contenedorHeroe-R">
+					<h3>Flash</h3>
+					<ol>
+						<li>Rebirth</li>
+						<li>Flashpoint</li>
+						<li>New 52 arc</li>
+					</ol>
+				</div>		
+			</article>	
+		</section>
+
+		<footer class="footer">
+			
+			<div class="contenedor">	
+
+				<div class="contacto">
+					<div class="img-container">
+						<img data-src="images/index_01.png" alt="No cargo u.u" width="200" height="200">	
+					</div>
+					
+					<a href="tel:+541168371587"> <strong>Telefono:</strong> <span>+541168371587"</span></a>
+					<a href="mailto:argbassist17@gmail.com"> <strong>Email:</strong> <span>argbassist17@gmail.com</span></a>
+					
+				</div>
+
+				<form class="formulario">
+
+					<div class="single-multiple">	
+							<label for = nombre>Nombre</label>
+							<input type="text" id="nombre" placeholder=" Ingrese su nombre" name="nombre" />
+							<label for = email>Email</label>
+							<input type="email" id="email" placeholder=" Ingrese su nombre" name="email" />
+							
+							
+							<div class="single-selection-sex">
+								<label for = mujer>
+									<input type="radio" id="mujer" name="sexo" value="mujer" />Mujer
+								</label>
+
+								<label for = hombre>
+									<input type="radio" id="hombre" name="sexo" value="hombre" />Hombre
+								</label>
+
+							</div>
+
+							<div class="multiple-selection-fav">
+								<label for = DC>
+									<input type="checkbox" id="DC" name="favoritos" value="DC" />DC
+								</label>
+
+								<label for = Marvel>
+									<input type="checkbox" id="Marvel" name="favoritos" value="Marvel Comics" />Marvel Comics
+								</label>
+
+								<label for = Vertigo>
+									<input type="checkbox" id="Vertigo" name="favoritos" value="Vertigo Comics"/>Vertigo
+								</label>
+
+								<label for = Indie>
+									<input type="checkbox" id="Indie" name="favoritos" value="Indie Stuff" />Indie
+								</label>		
+
+							</div>
+					</div>
+					
+					<div class="comments-submit">
+						<label for = comments>Comentarios</label>
+						<textarea id="comments" cols="20" rows="10" name="comments" placeholder="Ingresa tus comentariors aqui"></textarea>
+						<input type="submit" value="enviar"/>
+					</div>
+
+				</form>
+
+			</div>		
+
+		</footer>
+		<!-- Asi se introduce un scrip con javascript a un archivo HTML, dentro de scrip se puede programar muchas funcionalidades -->
+		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+		
+		<script type="text/javascript">
+			
+			// Con getElementById podemos acceder a un elemento dentro del HTML a traves de su id
+			var $burgerButton = document.getElementById("burger-button");
+			var $menu = document.getElementById('menu');
+			
+			// Los Event listener permiten escuchar acciones del navegador como un click, un toque, un cambio en alguna seleccion
+			 //Su sintaxis es el evento a escuchar seguido de una coma y la funcion a realizar  (Evento a escuchar, funcion o procedimiento a ejecutar)
+
+			 
+
+			 
+
+			 var consulta = window.matchMedia('(max-width: 500px)');
+			 // Agrega un listener escucha el resultado cada vez que se hace un ajuste de tamaño (en este caso) es decir escucha cuando sucede un cambio
+			 
+			 consulta.addListener(mediaQuery);
+			 
+			 mediaQuery();
+			 
+
+
+			 // En javascript las funciones se pueden colocar donde sea y solo cuando se llaman se ejecuntan
+			 
+			 // Funcion que consulta si la pantalla tiene un ancho max-width de 500px
+			 // Si la respuesta es true ejecuta el listener
+			 // Si la respuesta es false remueve el listener
+			 function mediaQuery(){
+
+			 	if(consulta.matches){
+
+			 		$burgerButton.addEventListener('touchstart', toggleMenu);
+			 		console.log('paso por aqui');
+
+			 		
+			 	}
+			 	else{
+
+			 		console.log('salio de aqui');
+			 		$burgerButton.removeEventListener('touchstart', toggleMenu);
+			 		
+			 		if($burgerButton.classList.contains('icon-close')){
+
+			 			toggleMenu();
+
+			 		}
+			 		// El removeEventListener debe llevar exactamente la misma sintaxis del addEventListener que quieres remover.
+
+			 	}	
+
+			 }
+			 
+			 function toggleMenu(){
+
+					 	$menu.classList.toggle('active');
+					 	$burgerButton.classList.toggle('icon-close');
+			}
+
+			// Lazy loading de las imagenes
+			var blazy = new Blazy({
+
+				selector: 'img'
+			})
+			
+
+			function addMenu(){
+
+				$menu.classList.add('active');
+				$burgerButton.classList.add('icon-close');
+			}
+
+			function removeMenu(){
+
+				$menu.classList.remove('active');
+				$burgerButton.classList.remove('icon-close');
+			}
+			// Adicion de swipes para un touchscreen
+			var $body = document.body;
+			var gestos = new Hammer($body);
+			
+
+			gestos.on('swipeleft', removeMenu);
+
+			gestos.on('swiperight', addMenu);
+
+		</script>
+
+
+	</body>
+
+	
+</html>
